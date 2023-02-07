@@ -1,13 +1,11 @@
 #!/bin/bash
 
-git rm *.gz
-git rm InRelease
-git rm Release
-git rm Release.gpg
-git rm Packages
+sudo apt --yes install dpkg-dev
 
-#delete old packages using javaforce.utils.GitRepo
-ant
+rm *.gz 2>/dev/null
+rm InRelease 2>/dev/null
+rm Release 2>/dev/null
+rm Release.gpg 2>/dev/null
 
 dpkg-scanpackages . > Packages
 
@@ -27,9 +25,5 @@ if [ ! -f javaforce.gpg ]; then
   cp ~/.gnupg/pubring.gpg ./javaforce.gpg
   chmod 644 javaforce.gpg
 fi
-
-git add *
-git commit -m $(date)
-git push origin --all
 
 echo Update complete!

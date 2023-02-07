@@ -15,6 +15,7 @@ mv TopRelease Release
 gpg --clearsign -o InRelease Release
 gpg -abs -o Release.gpg Release
 
+#compress metadata (optional)
 #gzip InRelease
 #gzip Release
 #gzip Release.gpg
@@ -24,3 +25,5 @@ if [ ! -f javaforce.gpg ]; then
   cp ~/.gnupg/pubring.gpg ./javaforce.gpg
   chmod 644 javaforce.gpg
 fi
+
+echo Update complete!
