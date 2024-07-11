@@ -1,5 +1,8 @@
 @echo off
 
+::this script will update msi packages in the winget-pkgs on github.com
+::the process is extremely slow and error prone
+
 if "%1"=="update" goto update
 
 ::install wingetcreate

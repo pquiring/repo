@@ -1,5 +1,8 @@
 @echo off
 
+::this script will publish new msi packages to winget-pkgs on github.com
+::the process is extremely slow and error prone
+
 ::install wingetcreate
 if not exist %LOCALAPPDATA%\Microsoft\WindowsApps\wingetcreate.exe winget install wingetcreate
 
