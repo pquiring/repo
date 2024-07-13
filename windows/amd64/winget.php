@@ -8,6 +8,8 @@
 
   //to install packages : winget install {package-name}
 
+  //requires .htaccess with "FallbackResource /windows/amd64/winget.php"
+
   $debug = false;
 
   header('Content-Type: application/json; charset=utf-8');
