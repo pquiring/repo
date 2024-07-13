@@ -8,7 +8,7 @@ if "%1"=="update" goto update
 ::install wingetcreate
 if not exist %LOCALAPPDATA%\Microsoft\WindowsApps\wingetcreate.exe winget install wingetcreate
 
-for /d %%d in (manifests\p\PeterQuiring\*) do call update.bat update %%d
+for /d %%d in (manifests\p\PeterQuiring\*) do call update-pkgs.bat update %%d
 goto end
 
 :update
