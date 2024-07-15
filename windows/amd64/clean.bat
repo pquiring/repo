@@ -1,4 +1,4 @@
 @echo off
 
-del *.msi
-rd /s manifests
+del *.msi 2>nul
+rd /s manifests 2>nul
