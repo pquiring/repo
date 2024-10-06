@@ -27,6 +27,6 @@ if [ ! -f javaforce.gpg ]; then
 fi
 
 . /etc/os-release
-sed 's/$(VERSION)/'$VERSION'/g' < javaforce.list.input > javaforce.list
+sed 's/$(VERSION)/'$VERSION_CODENAME'/g' < javaforce.list.input > javaforce.list
 
 echo Update complete!
