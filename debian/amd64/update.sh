@@ -26,4 +26,7 @@ if [ ! -f javaforce.gpg ]; then
   chmod 644 javaforce.gpg
 fi
 
+. /etc/os-release
+sed 's/$(VERSION)/'$VERSION'/g' < javaforce.list.input > javaforce.list
+
 echo Update complete!
