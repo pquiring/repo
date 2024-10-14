@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt --yes install dpkg-dev
+sudo apt --yes install dpkg-dev apt-utils
 
 rm *.gz 2>/dev/null
 rm InRelease 2>/dev/null
