@@ -7,4 +7,4 @@ if [ "$2" = "" ]; then
   exit
 fi
 
-docker run --rm -it --mount type=bind,src=/opt,dst=/opt arm64v8/$1:$2 bash
+docker run --rm -it --mount type=bind,src=/opt,dst=/opt --mount type=bind,src=/mnt,dst=/mnt arm64v8/$1:$2 bash
