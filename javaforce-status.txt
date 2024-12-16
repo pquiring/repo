@@ -8,7 +8,7 @@ Debian 12 bookworm 5.x    75.0   70.1
 Debian 13 trixie   7.x    75.0   70.1
 Fedora 40 (39,38)  6.x    75.0   70.1
 Fedora 41          7.x    75.0   72.0
-Arch               ~7.x   72.0   n/a
+Arch               ~7.x   75.0   n/a
 
 symlinks for Ubuntu:
 --------------------
