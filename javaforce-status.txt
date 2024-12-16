@@ -6,7 +6,7 @@ name      codename ffmpeg amd64  arm64
 ----      -------- ------ -----  -----
 Debian 12 bookworm 5.x    75.0   70.1
 Debian 13 trixie   7.x    75.0   70.1
-Fedora 40 (39,38)  6.x    75.0   70.1
+Fedora 40          6.x    75.0   70.1
 Fedora 41          7.x    75.0   72.0
 Arch               ~7.x   75.0   n/a
 
@@ -18,3 +18,8 @@ lunar -> Debian 12
 mantic -> Debian 13
 noble -> Debian 13
 oracular -> Debian 13
+
+symlinks for Fedora:
+--------------------
+38 -> 40
+39 -> 40
