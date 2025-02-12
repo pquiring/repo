@@ -7,6 +7,9 @@ rm InRelease 2>/dev/null
 rm Release 2>/dev/null
 rm Release.gpg 2>/dev/null
 
+cp ~/.gnupg/pubring.gpg ./javaforce.gpg
+chmod 644 javaforce.gpg
+
 dpkg-scanpackages . > Packages
 
 apt-ftparchive release . > TopRelease
@@ -20,11 +23,6 @@ gpg -abs -o Release.gpg Release
 #gzip Release
 #gzip Release.gpg
 #gzip Packages
-
-if [ ! -f javaforce.gpg ]; then
-  cp ~/.gnupg/pubring.gpg ./javaforce.gpg
-  chmod 644 javaforce.gpg
-fi
 
 . /etc/os-release
 sed 's/$(VERSION)/'$VERSION_CODENAME'/g' < javaforce.list.input > javaforce.list
