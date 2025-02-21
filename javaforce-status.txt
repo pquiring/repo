@@ -2,11 +2,11 @@ JavaForce Linux repo status:
 
 The following distros are maintained:
 
-name      codename ffmpeg amd64  arm64
-----      -------- ------ -----  -----
-Debian 12 bookworm 5.x    79.2   79.0
+name      codename ffmpeg amd64  arm64 end-of-life
+----      -------- ------ -----  ----- -----------
+Debian 12 bookworm 5.x    80.0   79.0  2028-06-30
 Debian 13 trixie   7.x    79.2   79.0
-Fedora 40          6.x    79.0   79.0
+Fedora 40          6.x    79.0   79.0  2025-05-28
 Fedora 41          7.x    79.0   79.0
 Arch               ~7.x   79.0   n/a
 
@@ -18,6 +18,7 @@ lunar -> Debian 12
 mantic -> Debian 13
 noble -> Debian 13
 oracular -> Debian 13
+plucky -> Debian 13
 
 symlinks for Fedora:
 --------------------
