@@ -4,7 +4,7 @@ The following distros are maintained:
 
 name      codename ffmpeg amd64  arm64 end-of-life
 ----      -------- ------ -----  ----- -----------
-Debian 12 bookworm 5.x    83.1   82.1  2028-06-30
+Debian 12 bookworm 5.x    84.0   82.1  2028-06-30
 Debian 13 trixie   7.x    84.0   82.1
 Fedora 40          6.x    79.0   79.0  2025-05-28
 Fedora 41          7.x    81.1   81.1  2025-11-19
