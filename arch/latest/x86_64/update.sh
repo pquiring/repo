@@ -1,15 +1,23 @@
 #!/bin/bash
 
-if [ "$1" == "" ]; then
-  echo usage : update.sh {system}
-  exit
-fi
+function update() {
 
-cp ~/.gnupg/pubring.gpg ./$1.gpg
-chmod 644 $1.gpg
+  if [ "$1" == "" ]; then
+    echo usage : update.sh {system}
+    return
+  fi
 
-for f in *.pkg.tar.xz; do
-  gpg --detach-sign --no-armor $f
-done
+  cp ~/.gnupg/pubring.gpg ./$1.gpg
+  chmod 644 $1.gpg
 
-repo-add --verify --sign $1.db.tar.gz *.pkg.tar.xz
+  for f in *.pkg.tar.xz; do
+    gpg --detach-sign --no-armor $f
+  done
+
+  repo-add --verify --sign $1.db.tar.gz *.pkg.tar.xz
+
+  echo Update complete!
+
+}
+
+update $1
