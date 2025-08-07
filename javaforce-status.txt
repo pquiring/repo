@@ -20,6 +20,7 @@ mantic -> Debian 13
 noble -> Debian 13
 oracular -> Debian 13
 plucky -> Debian 13
+questing -> Debian 13
 
 symlinks for Fedora:
 --------------------
