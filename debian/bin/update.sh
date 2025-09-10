@@ -12,8 +12,6 @@ function update() {
     return
   fi
 
-  sudo apt --yes install dpkg-dev apt-utils
-
   rm *.gz 2>/dev/null
   rm InRelease 2>/dev/null
   rm Release 2>/dev/null

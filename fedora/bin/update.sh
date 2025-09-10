@@ -12,7 +12,6 @@ function update() {
     return
   fi
 
-  sudo dnf -y install createrepo rpm-sign pinentry
   cp ../../bin/$1.repo .
   cp ../../bin/rpmmacros ~/.rpmmacros
   gpg --export -a > RPM-GPG-KEY-$1
