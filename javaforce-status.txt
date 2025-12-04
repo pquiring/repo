@@ -11,7 +11,7 @@ Fedora 40          6.x    79.0   79.0  2025-05-28  eol
 Fedora 41          7.x    81.1   81.1  2025-11-19  eol
 Fedora 42          7.x    92.0   92.0  2026-05-13  eol
 Fedora 43          7.x    94.0   93.0  2026-12-02  active
-Arch               ~7.x   93.0   n/a   n/a         active
+Arch               ~7.x   94.0   n/a   n/a         active
 
 symlinks for Ubuntu:
 --------------------
