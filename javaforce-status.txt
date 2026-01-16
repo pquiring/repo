@@ -10,7 +10,7 @@ Debian 14 forky    7.x    21  95.0   95.0  2030-??-??  active
 Fedora 40          6.x    21  79.0   79.0  2025-05-28  eol
 Fedora 41          7.x    25  81.1   81.1  2025-11-19  eol
 Fedora 42          7.x    25  92.0   92.0  2026-05-13  eol
-Fedora 43          7.x    25  95.0   94.0  2026-12-02  active
+Fedora 43          7.x    25  95.0   95.0  2026-12-02  active
 Arch               ~7.x   25  95.0   n/a   n/a         active
 
 symlinks for Ubuntu:
