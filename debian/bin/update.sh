@@ -35,7 +35,9 @@ function update() {
   #gzip Packages
 
   . /etc/os-release
-  sed 's/$(VERSION)/'$VERSION_CODENAME'/g' < ../../bin/$1.list.input > $1.list
+  #need to remove quotes from VERSION_ID
+  VERSION_ID=${VERSION_ID//\"/}
+  sed 's/$(VERSION)/'$VERSION_ID'/g' < ../../bin/$1.list.input > $1.list
 
   echo Update complete!
 
