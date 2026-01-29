@@ -15,14 +15,15 @@ Arch               ~7.x   25  97.0   n/a   n/a         active
 
 symlinks for Ubuntu:
 --------------------
-jammy -> Debian 12
-kinetic -> Debian 12
-lunar -> Debian 12
-mantic -> Debian 13
-noble -> Debian 13
-oracular -> Debian 13
-plucky -> Debian 13
-questing -> Debian 13
+jammy/22.04 -> Debian 12
+kinetic/22.10 -> Debian 12
+lunar/23.04 -> Debian 12
+mantic/23.10 -> Debian 13
+noble/24.04 -> Debian 13
+oracular/24.10 -> Debian 13
+plucky/25.04 -> Debian 13
+questing/25.10 -> Debian 14
+resolute/26.04 -> Debian 14
 
 symlinks for Fedora:
 --------------------
