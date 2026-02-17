@@ -42,11 +42,11 @@ fi
 
 function debian {
   apt update
-  apt --yes install dpkg-dev apt-utils
+  xargs -d '\n' apt --yes install < deb-build.deps
 }
 
 function fedora {
-  dnf -y install createrepo rpm-sign pinentry
+  xargs -d '\n' dnf -y install < rpm-build.deps
 }
 
 function arch {
