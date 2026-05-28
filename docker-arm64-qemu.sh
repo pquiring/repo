@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#docker run on arm64 (qemu)
+
+if [ "$2" = "" ]; then
+  echo usage : docker.sh distro release
+  exit
+fi
+
+docker run --platform linux/arm64 --rm -it --mount type=bind,src=/opt,dst=/opt --mount type=bind,src=/mnt,dst=/mnt arm64v8/$1:$2 bash
