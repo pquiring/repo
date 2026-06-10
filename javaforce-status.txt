@@ -28,8 +28,3 @@ oracular/24.10 -> Debian 13
 plucky/25.04 -> Debian 13
 questing/25.10 -> Debian 14
 resolute/26.04 -> Debian 14
-
-symlinks for Fedora:
---------------------
-38 -> 40
-39 -> 40
