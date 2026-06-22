@@ -4,9 +4,6 @@
 
 if [ "$2" = "" ]; then
   echo usage : docker.sh distro release
-  exit
+else
+  docker import $1\_$2.tar.gz
 fi
-
-docker import $1\_$2.tar.gz
-
-

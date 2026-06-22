@@ -28,7 +28,6 @@ function detectos {
     *)
       echo Unknown os detected!
       echo ID=$ID
-      exit
       ;;
   esac
 }
@@ -74,7 +73,6 @@ case $OS in
   *)
     echo OS installation not available yet!
     echo OS=$OS
-    exit
     ;;
 esac
 

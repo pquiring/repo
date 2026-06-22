@@ -4,8 +4,6 @@
 
 if [ "$2" = "" ]; then
   echo usage : docker.sh distro release
-  exit
+else
+  docker export $1\_$2 | gzip > $1\_$2.tar.gz
 fi
-
-docker export $1\_$2 | gzip > $1\_$2.tar.gz
-
