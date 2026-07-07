@@ -7,7 +7,7 @@ if [ "$1" = "" ]; then
 else
   DISTRO=$1
   RELEASE=$2
-  if [ $RELEASE = "" ]; then
+  if [ "$RELEASE" = "" ]; then
     RELEASE=latest
   fi
   docker run --platform linux/arm64 --rm -it --mount type=bind,src=/opt,dst=/opt --mount type=bind,src=/mnt,dst=/mnt arm64v8/$DISTRO:$RELEASE bash
